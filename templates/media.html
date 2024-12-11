@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+    }
+
+    .product-container {
+      display: flex;
+      max-width: 900px;
+      margin: 40px auto;
+      background: #fff;
+      border: 3px solid #ddd; / Unified border for all content /
+      padding: 20px;
+      border-radius: 10px; / Optional rounded corners /
+    }
+
+    .product-image img {
+      max-width: 300px;
+      border-radius: 10px;
+    }
+
+    .product-details {
+      margin-left: 20px;
+      flex: 1;
+    }
+
+    h1 {
+      font-size: 24px;
+      margin-bottom: 5px;
+    }
+
+    .product-description {
+      font-size: 16px;
+      color: #555;
+      margin-bottom: 15px;
+    }
+
+    .price {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .current-price {
+      font-weight: bold;
+      color: #e63946;
+    }
+
+    .original-price {
+      text-decoration: line-through;
+      color: #777;
+      margin-left: 10px;
+    }
+
+    .discount {
+      color: #ff9800;
+      margin-left: 10px;
+    }
+
+    .tax-info {
+      font-size: 14px;
+      color: #888;
+      margin-bottom: 20px;
+    }
+
+
+    .action-buttons {
+      margin: 20px 0;
+    }
+
+    .add-to-bag, .wishlist {
+      padding: 10px 20px;
+      border: 2px solid #ddd;
+      cursor: pointer;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+    .add-to-bag {
+      background-color: #ff3b3b;
+      color: white;
+      margin-right: 10px;
+    }
+
+    .wishlist {
+      background-color: #fff;
+      color: #ff3b3b;
+      border: 2px solid #ff3b3b;
+    }
+
+    .delivery-options {
+      margin-top: 20px;
+    }
+
+    .delivery-info {
+      margin-top: 10px;
+    }
+
+    .delivery-info input {
+      padding: 10px;
+      width: calc(100% - 20px);
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="product-container">
+    <div class="product-image">
+      <img src="product.png" alt="Vector X Football Shoes">
+    </div>
+    <div class="product-details">
+      <h1>VECTOR X</h1>
+      <p class="product-description">Adults Football Non-Marking Shoes</p>
+      <p class="price">
+        <span class="current-price">₹1349</span>
+        <span class="original-price">₹2249</span>
+        <span class="discount">(40% OFF)</span>
+      </p>
+      <p class="tax-info">inclusive of all taxes</p>
+
+
+
+      <div class="action-buttons">
+        <button class="add-to-bag">ADD TO BAG</button>
+        <button class="wishlist">♡ WISHLIST</button>
+      </div>
+
+      <div class="delivery-options">
+        <p>DELIVERY OPTIONS</p>
+        <div class="delivery-info">
+          <input type="text" value="695001 (Sreejish M)" disabled>
+          <p>Get it by Mon, Dec 09</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
